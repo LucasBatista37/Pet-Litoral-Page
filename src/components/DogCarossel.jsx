@@ -34,7 +34,7 @@ const DogCarousel = () => {
   };
 
   return (
-    <section className="dog-carousel">
+    <section className="dog-carousel" id="clientes">
       <h3>Nossos Clientes 🐾</h3>
 
       <div className="carousel-wrapper">

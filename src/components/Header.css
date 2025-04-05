@@ -4,8 +4,7 @@
   top: 0;
   left: 0;
   padding: 16px 24px;
-  background-color: transparent;
-  backdrop-filter: blur(4px);
+  background-color: white;
   z-index: 1000;
 }
 
@@ -32,7 +31,7 @@
 
 .nav a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -63,7 +62,6 @@
   display: none;
 }
 
-/* Botão Hamburguer */
 .hamburguer {
   display: none;
   flex-direction: column;
@@ -80,7 +78,6 @@
   transition: all 0.3s ease;
 }
 
-/* Animação do ícone */
 .hamburguer.active span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -93,7 +90,6 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .nav {
     position: absolute;
