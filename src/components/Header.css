@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px 24px;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #f97316;
+}
+
+.btn-agendar {
+  background-color: #f97316;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #ea580c;
+}
+
+.btn-agendar.desktop {
+  display: inline-block;
+}
+
+.btn-agendar.mobile {
+  display: none;
+}
+
+/* Botão Hamburguer */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburguer span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animação do ícone */
+.hamburguer.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .btn-agendar.desktop {
+    display: none;
+  }
+
+  .btn-agendar.mobile {
+    display: inline-block;
+  }
+
+  .hamburguer {
+    display: flex;
+  }
+}
