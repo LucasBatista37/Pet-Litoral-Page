@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">PetLitoral🐾</h1>
+        <h1 className="logo">Pet Litoral🐾</h1>
 
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <a href="#inicio" onClick={() => setMenuOpen(false)}>Início</a>

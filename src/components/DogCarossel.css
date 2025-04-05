@@ -1,0 +1,151 @@
+.dog-carousel {
+  padding: 60px 24px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.dog-carousel h3 {
+  font-size: 28px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  flex: 0 0 80%;
+  max-width: 400px;
+  scroll-snap-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9fafb;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.carousel-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #f97316;
+}
+
+.btn-see-all {
+  background-color: transparent;
+  color: #f97316;
+  border: 2px solid #f97316;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-see-all:hover {
+  background-color: #f97316;
+  color: #fff;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #f97316;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: #f97316;
+  color: white;
+}
+
+.nav-btn.left {
+  left: -20px;
+}
+
+.nav-btn.right {
+  right: -20px;
+}
+
+@media (min-width: 768px) {
+  .carousel-track {
+    padding: 0 60px;
+  }
+
+  .carousel-item {
+    flex: 0 0 400px;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  .dog-carousel {
+    padding: 80px 60px;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(6px);
+  }
+}
