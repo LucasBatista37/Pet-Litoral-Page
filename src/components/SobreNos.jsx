@@ -1,6 +1,6 @@
 import React from 'react';
 import './SobreNos.css';
-import sobreImg from '../assets/sobre.png';
+import sobreImg from '../assets/dog5.png';
 
 const SobreNos = () => {
   return (

@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   padding: 16px 24px;
-  background-color: white;
+  background-color: #fff8ee;
   z-index: 1000;
 }
 
@@ -20,7 +20,7 @@
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: #000;
+  color: #1e293b;
   font-family: "Poppins", sans-serif;
 }
 

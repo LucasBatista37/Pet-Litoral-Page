@@ -23,15 +23,22 @@ const Header = () => {
             Preços
           </a>
           <a
-            href="#agendamento"
+            href="https://wa.me/5513997503602?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20meu%20pet! 🐾"
             className="btn-agendar mobile"
             onClick={() => setMenuOpen(false)}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Agendar Horário
           </a>
         </nav>
 
-        <a href="#agendamento" className="btn-agendar desktop">
+        <a
+          href="https://wa.me/5513997503602?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20meu%20pet! 🐾"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-agendar desktop"
+        >
           Agendar Horário
         </a>
 

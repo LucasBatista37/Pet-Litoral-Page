@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="container">
         <div className="footer-top">
-          <h2 className="logoPete">Banho & Tosa 🐾</h2>
+          <h2 className="logoPete">Pet Litoral 🐾</h2>
 
           <nav className="footer-nav">
             <a href="#about">Sobre</a>
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2024 Banho & Tosa. Todos os direitos reservados.</p>
+        <p>© 2025 Pet Litoral. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 .sobre-nos-modern {
   background-color: #fff8ee;
   padding: 100px 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .sobre-nos-container {
@@ -21,9 +21,11 @@
 }
 
 .sobre-nos-imagem-modern img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: block;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sobre-nos-conteudo {
@@ -73,4 +75,65 @@
   font-size: 18px;
   width: 24px;
   text-align: right;
+}
+
+@media (max-width: 1199px) {
+  .sobre-nos-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .sobre-nos-imagem-modern img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sobre-nos-conteudo h2 {
+    font-size: 28px;
+  }
+
+  .sobre-nos-conteudo p {
+    font-size: 15px;
+  }
+
+  .sobre-nos-lista li {
+    font-size: 15px;
+  }
+
+  .sobre-nos-lista li span {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sobre-nos-imagem-modern img {
+    max-width: 300px;
+
+    margin: 0 auto;
+  }
+
+  .sobre-nos-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-nos-conteudo {
+    padding: 0 10px;
+  }
+
+  .sobre-nos-conteudo h2 {
+    font-size: 24px;
+  }
+
+  .sobre-nos-conteudo p,
+  .sobre-nos-lista li {
+    font-size: 14px;
+  }
 }
