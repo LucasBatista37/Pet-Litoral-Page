@@ -13,8 +13,8 @@ const Header = () => {
           <a href="#inicio" onClick={() => setMenuOpen(false)}>
             Início
           </a>
-          <a href="#servicos" onClick={() => setMenuOpen(false)}>
-            Serviços
+          <a href="#sobre" onClick={() => setMenuOpen(false)}>
+            Sobre
           </a>
           <a href="#precos" onClick={() => setMenuOpen(false)}>
             Preços

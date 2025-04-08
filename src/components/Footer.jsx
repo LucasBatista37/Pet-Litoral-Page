@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -10,9 +10,9 @@ const Footer = () => {
           <h2 className="logoPete">Pet Litoral 🐾</h2>
 
           <nav className="footer-nav">
-            <a href="#about">Sobre</a>
-            <a href="#services">Serviços</a>
-            <a href="#contact">Contato</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#precos">Prços</a>
+            <a href="#clientes">Clientes</a>
           </nav>
 
           <div className="social-icons">
