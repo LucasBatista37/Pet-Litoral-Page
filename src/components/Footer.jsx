@@ -16,13 +16,10 @@ const Footer = () => {
           </nav>
 
           <div className="social-icons">
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/pet.litoral" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="#" aria-label="Facebook">
-              <FaFacebookF />
-            </a>
-            <a href="#" aria-label="WhatsApp">
+            <a href="https://wa.me/5513997503602" aria-label="WhatsApp">
               <FaWhatsapp />
             </a>
           </div>

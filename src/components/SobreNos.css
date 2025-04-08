@@ -13,6 +13,14 @@
   align-items: center;
 }
 
+.price-label {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
 @media (min-width: 900px) {
   .sobre-nos-container {
     flex-direction: row;

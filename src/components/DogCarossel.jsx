@@ -1,14 +1,16 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './DogCarossel.css';
 
-import dog1 from '../assets/banho_tosa.jpg';
-import dog2 from '../assets/banho_tosa.jpg';
-import dog3 from '../assets/banho_tosa.jpg';
-import dog4 from '../assets/banho_tosa.jpg';
-import dog5 from '../assets/banho_tosa.jpg';
+import dog1 from '../assets/dog1.jpeg';
+import dog2 from '../assets/dog2.jpeg';
+import dog3 from '../assets/dog3.jpeg';
+import dog4 from '../assets/dog4.jpeg';
+import dog7 from '../assets/dog7.jpeg';
+import dog8 from '../assets/dog8.jpeg';
+import dog9 from '../assets/dog9.jpeg';
 
 const DogCarousel = () => {
-  const images = [dog1, dog2, dog3, dog4, dog5];
+  const images = [dog1, dog2, dog3, dog4, dog7, dog8, dog9];
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -35,9 +37,9 @@ const DogCarousel = () => {
 
   return (
     <section className="dog-carousel" id="clientes">
-      <h3>Nossos Clientes 🐾</h3>
+      <h3 data-aos="fade-up">Nossos Clientes</h3>
 
-      <div className="carousel-wrapper">
+      <div className="carousel-wrapper" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
         <button className="nav-btn left" onClick={scrollLeft}>‹</button>
 
         <div className="carousel-track" ref={carouselRef}>
@@ -51,13 +53,11 @@ const DogCarousel = () => {
         <button className="nav-btn right" onClick={scrollRight}>›</button>
       </div>
 
-      <div className="carousel-indicators">
+      <div className="carousel-indicators" data-aos="fade-up" data-aos-delay="300">
         {images.map((_, idx) => (
           <span key={idx} className={`dot ${idx === activeIndex ? 'active' : ''}`} />
         ))}
       </div>
-
-      <button className="btn-see-all">Ver galeria completa</button>
     </section>
   );
 };

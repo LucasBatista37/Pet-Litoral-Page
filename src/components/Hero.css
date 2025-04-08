@@ -64,11 +64,59 @@
   transform: scale(1.05);
 }
 
+.patinha-icon {
+  color: #a78bfa;
+  font-size: 28px;
+  margin-left: 6px;
+}
+
 .hero-image {
   flex: 1;
   text-align: center;
   min-width: 300px;
 }
+
+.titulo-pet {
+  position: relative;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #1e293b;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #f97316;
+  border: 2px solid #f97316;
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background-color: #f97316;
+  color: white;
+  transform: scale(1.05);
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
   .hero-content {
@@ -82,5 +130,9 @@
 
   .hero-text p {
     font-size: 16px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 }

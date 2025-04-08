@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">Pet Litoral🐾</h1>
+        <h1 className="logo">Pet Litoral 🐾 </h1>
 
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <a href="#inicio" onClick={() => setMenuOpen(false)}>
@@ -16,12 +16,13 @@ const Header = () => {
           <a href="#servicos" onClick={() => setMenuOpen(false)}>
             Serviços
           </a>
-          <a href="#clientes" onClick={() => setMenuOpen(false)}>
-            Clientes
-          </a>
           <a href="#precos" onClick={() => setMenuOpen(false)}>
             Preços
           </a>
+          <a href="#clientes" onClick={() => setMenuOpen(false)}>
+            Clientes
+          </a>
+
           <a
             href="https://wa.me/5513997503602?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20meu%20pet! 🐾"
             className="btn-agendar mobile"
