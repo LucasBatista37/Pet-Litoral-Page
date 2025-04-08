@@ -1,12 +1,59 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pet Litoral Site 
 
-Currently, two official plugins are available:
+Um site moderno e responsivo para um pet shop, que tem foco em agendamento de serviços de banho e tosa, utilizando React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🔗 Acesse o site
+[👉 Ver Site](https://petlitoral.shop)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Demonstração
+
+![Print](./assets/petlitoral_print.png)
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- React
+- Vite
+- Figma
+
+---
+
+## ⚙️ Seções
+
+- Página inicial com chamada para ação
+- Seções: Serviços, Clientes, Preços e Sobre Nós
+- Integração com WhatsApp para agendamento
+- Imagens e elementos gráficos personalizados
+- Animações e efeitos visuais sutis
+
+---
+
+## 🛠️ Rodar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/LucasBatista37/pet-litoral-page.git
+
+# Navegue para pasta
+cd pet-litoral-page
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
+````
+---
+
+## :wave: Contato
+
+Em caso de dúvidas ou sugestões:
+
+-   **E-mail**: [lucas.batista9734@gmail.com](mailto:lucas.batista9734@gmail.com)
+-   **LinkedIn**: [linkedin.com/in/lucas-batista-004212263](https://www.linkedin.com/in/lucas-batista-004212263/)
+-   **GitHub**: [github.com/LucasBatista37](https://github.com/LucasBatista37)
