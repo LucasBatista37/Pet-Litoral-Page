@@ -11,7 +11,7 @@ Um site moderno e responsivo para um pet shop, que tem foco em agendamento de se
 
 ## 📸 Demonstração
 
-![Print](./assets/petlitoral_print.png)
+![Print](https://raw.githubusercontent.com/LucasBatista37/Pet-Litoral-Page/refs/heads/main/src/assets/petlitoral_print.png)
 
 ---
 
